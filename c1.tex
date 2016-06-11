@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{listingsutf8}
+\usepackage{framed}
+\usepackage{lineno}
+\setlength{\FrameRule}{0.001 em}
+\setlength{\FrameSep}{0.1 em}
+%\usepackage{times} %внезапно, у меня нет италика и болда
+\usepackage{embedfile}
+\embedfile{sauce.7z}
+\usepackage{moreverb}
+
+
+\def\linenumberfont{\normalfont\normalsize\ttfamily}
+\newcommand{\perl}[1]{
+\vbox{
+\begin{framed}
+\begin{internallinenumbers}
+\verbatiminput{#1}
+\end{internallinenumbers}
+\end{framed}
+}
+\resetlinenumber}
+
+\newcommand{\remph}[1]{„\emph{#1}”}
+
+\usepackage{upquote,textcomp}
+
+\begin{document}
+\include{s01}
+%\include{s02}
+\end{document}
