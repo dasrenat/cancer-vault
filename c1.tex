@@ -10,8 +10,8 @@
 \setlength{\FrameRule}{0.001 em}
 \setlength{\FrameSep}{0.1 em}
 %\usepackage{times} %внезапно, у меня нет италика и болда
-\usepackage{embedfile}
-\embedfile{sauce.7z}
+%\usepackage{embedfile}
+%\embedfile{sauce.7z}
 \usepackage{moreverb}
 
 
@@ -20,7 +20,7 @@
 \vbox{
 \begin{framed}
 \begin{internallinenumbers}
-\verbatiminput{#1}
+\verbatiminput{sources/#1}
 \end{internallinenumbers}
 \end{framed}
 }
@@ -32,5 +32,5 @@
 
 \begin{document}
 \include{s01}
-%\include{s02}
+\include{s02}
 \end{document}
