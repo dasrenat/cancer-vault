@@ -1,2 +1,2 @@
 #!/usr/bin/perl -w
-print "YOBA ETO TI?\n"; #А это комментарий
+print "YOBA ETO TI?\n"; # а это комментарий
